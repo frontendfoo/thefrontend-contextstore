@@ -1,0 +1,46 @@
+{
+  "name": "@thefrontend/contextstore",
+  "version": "1.0.0",
+  "description": "Global store for React using Context and custom hooks.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "Context",
+    "Api",
+    "Store",
+    "global",
+    "hooks",
+    "custom"
+  ],
+  "author": "Alex Shepherd",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@thefrontend/prettier": "^1.0.1",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "prettier": "@thefrontend/prettier",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontendfoo/thefrontend-contextstore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/frontendfoo/thefrontend-contextstore/issues"
+  },
+  "homepage": "https://github.com/frontendfoo/thefrontend-contextstore#readme"
+}
