@@ -4,8 +4,8 @@
   "description": "Global store for React using Context and custom hooks.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel src -d lib",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src/index.js -d lib",
+    "test": "jest"
   },
   "keywords": [
     "React",
@@ -24,8 +24,10 @@
     "@babel/preset-env": "^7.8.3",
     "@babel/preset-react": "^7.8.3",
     "@thefrontend/prettier": "^1.0.1",
+    "jest": "^24.9.0",
     "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react-dom": "^16.8.0",
+    "react-test-renderer": "^16.12.0"
   },
   "peerDependencies": {
     "react": "^16.8.0",

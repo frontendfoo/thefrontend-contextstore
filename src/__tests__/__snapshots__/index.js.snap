@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The makeStore script The Provider Component should match its snapshot 1`] = `
+<Context.Provider
+  value={
+    Array [
+      Object {},
+      [Function],
+    ]
+  }
+>
+  Children
+</Context.Provider>
+`;
+
+exports[`The makeStore script The Provider Component should match its snapshot with initialState 1`] = `
+<Context.Provider
+  value={
+    Array [
+      Object {
+        "test": "yes",
+      },
+      [Function],
+    ]
+  }
+>
+  Children
+</Context.Provider>
+`;
+
+exports[`The makeStore script The Provider Component should match its snapshot with initialState and initialState prop merge 1`] = `
+<Context.Provider
+  value={
+    Array [
+      Object {
+        "test1": "yes",
+        "test2": "no",
+      },
+      [Function],
+    ]
+  }
+>
+  Children
+</Context.Provider>
+`;
+
+exports[`The makeStore script The Provider Component should match its snapshot with initialState prop 1`] = `
+<Context.Provider
+  value={
+    Array [
+      Object {
+        "test": "yes",
+      },
+      [Function],
+    ]
+  }
+>
+  Children
+</Context.Provider>
+`;
