@@ -2,9 +2,14 @@
   "name": "@thefrontend/contextstore",
   "version": "1.0.1",
   "description": "Global store for React using Context and custom hooks.",
-  "main": "lib/index.js",
+  "main": "lib/cjs/thefrontend-contextstore.js",
+  "module": "lib/es/thefrontend-contextstore.js",
   "scripts": {
-    "build": "babel src/index.js -d lib",
+    "build": "npm run babel:cjs && npm run babel:es",
+    "babel:cjs": "NODE_ENV=cjs babel src/thefrontend-contextstore.js -d lib/cjs",
+    "babel:es": "NODE_ENV=es babel src/thefrontend-contextstore.js -d lib/es",
+    "uglify:es": "uglifyjs ./lib/es/thefrontend-contextstore.js -o ./lib/es/thefrontend-contextstore.min.js",
+    "uglify:cjs": "uglifyjs ./lib/cjs/thefrontend-contextstore.js -o ./lib/cjs/thefrontend-contextstore.min.js",
     "test": "jest"
   },
   "keywords": [
@@ -27,7 +32,8 @@
     "jest": "^24.9.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
-    "react-test-renderer": "^16.12.0"
+    "react-test-renderer": "^16.12.0",
+    "uglify-js": "^3.7.6"
   },
   "peerDependencies": {
     "react": "^16.8.0",
