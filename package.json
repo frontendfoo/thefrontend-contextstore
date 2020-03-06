@@ -1,6 +1,6 @@
 {
   "name": "@thefrontend/contextstore",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Global store for React using Context and custom hooks.",
   "main": "lib/cjs/thefrontend-contextstore.js",
   "module": "lib/es/thefrontend-contextstore.js",
