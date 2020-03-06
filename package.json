@@ -6,11 +6,11 @@
   "module": "lib/es/thefrontend-contextstore.js",
   "scripts": {
     "build": "npm run babel:cjs && npm run babel:es",
-    "babel:cjs": "NODE_ENV=cjs babel src/thefrontend-contextstore.js -d lib/cjs",
-    "babel:es": "NODE_ENV=es babel src/thefrontend-contextstore.js -d lib/es",
+    "babel:cjs": "MODULE_ENV=cjs babel src/thefrontend-contextstore.js -d lib/cjs",
+    "babel:es": "MODULE_ENV=es babel src/thefrontend-contextstore.js -d lib/es",
     "uglify:es": "uglifyjs ./lib/es/thefrontend-contextstore.js -o ./lib/es/thefrontend-contextstore.min.js",
     "uglify:cjs": "uglifyjs ./lib/cjs/thefrontend-contextstore.js -o ./lib/cjs/thefrontend-contextstore.min.js",
-    "test": "jest"
+    "test": "MODULE_ENV=cjs jest"
   },
   "keywords": [
     "React",

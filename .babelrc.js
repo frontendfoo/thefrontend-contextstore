@@ -1,19 +1,16 @@
-let presets
+const presets = ['@babel/preset-react']
 
-if (process.env['NODE_ENV'] === 'cjs') {
-  presets = ['@babel/preset-env', '@babel/preset-react']
+if (process.env['MODULE_ENV'] === 'cjs') {
+  presets.push('@babel/preset-env')
 }
 
-if (process.env['NODE_ENV'] === 'es') {
-  presets = [
-    [
-      '@babel/preset-env',
-      {
-        modules: false,
-      },
-    ],
-    '@babel/preset-react',
-  ]
+if (process.env['MODULE_ENV'] === 'es') {
+  presets.push([
+    '@babel/preset-env',
+    {
+      modules: false,
+    },
+  ])
 }
 
 module.exports = { presets }

@@ -2,7 +2,7 @@ import React from 'react'
 import ShallowRenderer from 'react-test-renderer/shallow'
 import TestRenderer from 'react-test-renderer'
 import { testHook } from '../utils/testing'
-import makeStore from '../'
+import makeStore from '../thefrontend-contextstore'
 
 const { act } = TestRenderer
 const renderer = new ShallowRenderer()
